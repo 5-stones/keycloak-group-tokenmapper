@@ -1,12 +1,12 @@
 {
   "name": "keycloak-group-tokenmapper",
-  "version": "1.0.0-rc.0",
+  "version": "1.0.0-rc.1",
   "main": "index.js",
   "repository": "git@github.com:5-stones/keycloak-group-tokenmapper.git",
   "author": "Jacob Spizziri <jspizziri@weare5stones.com>",
   "license": "MIT",
   "scripts": {
-		"build": "mvn clean install",
+    "build": "mvn clean install",
     "version:pom": "node ./bin/release.js",
     "version": "yarn version:pom && yarn changelog && git add CHANGELOG.md",
     "postversion": "git push && git push --tags",
