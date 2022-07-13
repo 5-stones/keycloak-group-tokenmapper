@@ -14,3 +14,34 @@ map.
 	```
 2. Copy the jar produced in `target/` to your `providers` directory (for Quarkus)
 	or `standalone/deployments` directory (for legacy) and rebuild/restart keycloak.
+
+## Release
+
+The standard release command for this project is:
+
+```
+yarn version
+```
+
+This command will:
+
+1. Generate/update the Changelog
+1. Bump the package version
+1. Tag & pushing the commit
+
+e.g.
+
+```
+yarn version --new-version 1.2.17
+yarn version --patch // 1.2.17 -> 1.2.18
+```
+
+#### Why Yarn?
+
+Why are we using yarn on a Java project? Because we have standard tooling around
+Changelog generation and release based around `commitizen` and
+`conventional-changelog`. And we do what we want.
+
+## Contributing
+
+See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
