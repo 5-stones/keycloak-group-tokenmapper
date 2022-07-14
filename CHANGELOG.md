@@ -1,3 +1,7 @@
+## [1.0.1](https://github.com/5-stones/keycloak-group-tokenmapper/compare/v1.0.0...v1.0.1) (2022-07-14)
+
+
+
 # [1.0.0](https://github.com/5-stones/keycloak-group-tokenmapper/compare/v1.0.0-rc.3...v1.0.0) (2022-07-14)
 
 
