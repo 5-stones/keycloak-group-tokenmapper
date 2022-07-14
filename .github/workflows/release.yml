@@ -29,7 +29,6 @@ jobs:
           prerelease: false
           release_name: ${{ steps.version.outputs.version }}
           tag_name: ${{ github.ref }}
-          body: [${{ github.ref_name }}](https://github.com/5-stones/keycloak-group-tokenmapper/blob/main/CHANGELOG.md)
         env:
           GITHUB_TOKEN: ${{ github.token }}
 
