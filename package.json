@@ -8,7 +8,7 @@
   "scripts": {
     "build": "mvn clean install",
     "version:pom": "node ./bin/release.js",
-    "version": "yarn version:pom && yarn changelog && git add CHANGELOG.md",
+    "version": "yarn version:pom && yarn changelog && git add CHANGELOG.md pom.xml",
     "postversion": "git push && git push --tags",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
