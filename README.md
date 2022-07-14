@@ -8,12 +8,35 @@ map.
 
 ## Installation
 
-1. Build the jar:
+Installation of the plugin consists of obtaining the `.jar` file and doing
+one of the following:
+
+1. **Quarkus** - copy the `.jar` into your `providers` directory.
+2. **WildFly** - copy the `.jar` into your `standalone/deployments` directory.
+
+Then rebuild/restart keycloak.
+
+#### Download The `.jar`
+
+Each GitHub release has the build artifact uploaded to it. You can manually
+download it and install it by going to the Release and downloading the artifact.
+
+If you want to automate it you can do the following:
+
+```sh
+export VERSION=some_version
+wget "https://github.com/5-stones/keycloak-group-tokenmapper/releases/download/v$VERSION/com.weare5stones.keycloak.tokenmapper-group-$VERSION.jar"
+```
+
+#### Clone And Build The `.jar`
+
+1. Clone the repository
+1. From the root of the repository run:
 	```
 	mvn clean install
 	```
-2. Copy the jar produced in `target/` to your `providers` directory (for Quarkus)
-	or `standalone/deployments` directory (for legacy) and rebuild/restart keycloak.
+
+The built `.jar` will be available in the root of the `target` folder.
 
 ## Release
 
