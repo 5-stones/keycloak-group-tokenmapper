@@ -27,6 +27,17 @@ If you want to automate it you can do the following:
 export VERSION=some_version
 wget "https://github.com/5-stones/keycloak-group-tokenmapper/releases/download/v$VERSION/com.weare5stones.keycloak.tokenmapper-group-$VERSION.jar"
 ```
+Or in your `Dockerfile`:
+
+```Dockerfile
+ENV TOKEN_MAPPER_VERSION=some_version
+ADD --chown=keycloak:keycloak \
+  "https://github.com/5-stones/keycloak-group-tokenmapper/releases/download/v$TOKEN_MAPPER_VERSION/com.weare5stones.keycloak.tokenmapper-group-$TOKEN_MAPPER_VERSION.jar" \
+  /opt/keycloak/providers/
+```
+
+**NOTE:** `ADD` is used above as modern `quay.io:keycloak\keycloak` base images
+[don't have a package manager bundled with them](https://www.keycloak.org/server/containers#_installing_additional_rpm_packages).
 
 #### Clone And Build The `.jar`
 
