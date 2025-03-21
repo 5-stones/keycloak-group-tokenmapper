@@ -1,1 +1,2 @@
 com.weare5stones.keycloak.tokenmapper.group.GroupMapper
+com.weare5stones.keycloak.tokenmapper.group.LegacyGroupMapper

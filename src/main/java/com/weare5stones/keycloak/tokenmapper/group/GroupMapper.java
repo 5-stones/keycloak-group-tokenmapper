@@ -19,7 +19,6 @@ import org.keycloak.representations.idm.GroupRepresentation;
 import org.keycloak.representations.IDToken;
 
 import java.util.ArrayList;
-import java.util.function.Function;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -31,7 +30,7 @@ public class GroupMapper extends AbstractOIDCProtocolMapper
 
 	public static final String PROVIDER_ID = "oidc-group-mapper";
 
-	private static final List<ProviderConfigProperty> configProperties = new ArrayList<>();
+	protected static final List<ProviderConfigProperty> configProperties = new ArrayList<>();
 
 	static final String GROUP_ID = "idEnabled";
 	static final String GROUP_NAME = "nameEnabled";
